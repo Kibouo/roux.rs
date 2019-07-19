@@ -1,3 +1,4 @@
-test:
-  override:
-    - echo "test"
+jobs:
+  test:
+    override:
+      - echo "test"
