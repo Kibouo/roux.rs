@@ -93,11 +93,13 @@
 <span id="93">93</span>
 <span id="94">94</span>
 <span id="95">95</span>
+<span id="96">96</span>
+<span id="97">97</span>
 </pre><div class="example-wrap"><pre class="rust ">
 <span class="attribute">#![<span class="ident">deny</span>(<span class="ident">missing_docs</span>)]</span>
 
 <span class="doccomment">//! # roux.rs</span>
-<span class="doccomment">//! This crate simple access to he Reddit API</span>
+<span class="doccomment">//! This crate provides simple access to he Reddit API.</span>
 <span class="doccomment">//! ## Using OAuth</span>
 <span class="doccomment">//! To create an OAuth client with the reddit API, use the `Reddit` class.</span>
 <span class="doccomment">//! ```rust,no_run</span>
@@ -120,10 +122,12 @@
 <span class="kw">use</span> <span class="ident">reqwest</span>::<span class="ident">header</span>::<span class="ident">USER_AGENT</span>;
 <span class="kw">use</span> <span class="ident">reqwest</span>::<span class="ident">Client</span>;
 
-<span class="doccomment">/// Read only subreddit.</span>
+<span class="doccomment">/// Subreddit module.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">subreddit</span>;
-<span class="doccomment">/// Read only user.</span>
+<span class="kw">pub</span> <span class="kw">use</span> <span class="ident">subreddit</span>::<span class="ident">Subreddit</span>;
+<span class="doccomment">/// User module.</span>
 <span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">user</span>;
+<span class="kw">pub</span> <span class="kw">use</span> <span class="ident">user</span>::<span class="ident">User</span>;
 
 <span class="kw">mod</span> <span class="ident">util</span>;
 <span class="kw">mod</span> <span class="ident">responses</span>;
