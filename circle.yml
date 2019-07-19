@@ -3,5 +3,5 @@ jobs:
     machine: true
     steps:
       - run:
-        name: Why does this need to be so verbose
-        comman: echo "If this fails I'm going to scream"
+          name: Why does this need to be so verbose
+          comman: echo "If this fails I'm going to scream"
